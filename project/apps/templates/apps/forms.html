@@ -1,0 +1,12 @@
+<h1> Its a form page</h1>
+
+
+<form action="." method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+    From mail : <input type="text" name="from_mail">
+    <br> To mail : <input type="text" name="to_mail"><br>
+    Email Subject :  <input type="text" name="email_subject"><br>
+    Email body : <textarea name="email_body"></textarea><br>
+    <input type="submit" value="Submit">
+
+</form>
